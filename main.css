@@ -1,0 +1,70 @@
+.menu {font-size: 20px;      font-style:oblique;
+    cursor: pointer;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    position: fixed;
+    left: 10px;
+    z-index: 2000;
+border-radius: 10px 10px;
+list-style: none;
+    display: flex;
+    padding: 20px;
+    border-radius: 10px 10px;
+}
+/* Menu Lateral */
+.fundo {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Fora da tela inicialmente */
+    width: 170px;
+    height: 500vh;
+    background-color:white;
+    transition: left 0.5s;
+    z-index: 1000;
+    border-radius: 10px 10px;
+    padding-top: 20px;
+    margin-bottom: 5px;
+}
+.botão-fechar-X {float: right;
+    position: relative;right: 10px;top: 10px;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+}
+.animação ul li a:hover {
+    background-color: rgb(255, 255, 255);
+    white-space: nowrap;
+    text-decoration: underline;
+    width: 100px;
+    border-radius: 10px 10px;
+    box-shadow: 5px 5px 5px black;
+    padding: 10px;
+    color: red;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px 10px;
+    margin-bottom: 10px;
+}
+body{align-items: center;justify-content: center;margin: auto;text-align: center;background:linear-gradient(to right,white,black,white);}
+h1{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-style: oblique;font-size: 30px;color: white;text-shadow: 6px;text-decoration: underline;}
+h2{font-size: 20px;font-family: Arial, Helvetica, sans-serif;font-style: inherit;text-shadow: 6px;color: black;}
+p{font-size: 15px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-style: unset;text-shadow: 6px;color: white;}
+dl{padding: 5px;}
+dt{padding: 5px;text-align: left;font-size: 20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-style: oblique;text-shadow: 6px;}
+dd{padding: 5px;text-align: left;font-size: 15px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-style: italic;text-shadow: 6px;}
+thead{font-size: 20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-style: oblique;text-shadow: 6px;text-align: left;}
+tbody{font-size: 15px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-style: inherit;text-shadow: 6px;text-align: left;}
+tfoot{font-size: 20px;font-family: 'Times New Roman', Times, serif;font-style: initial;text-shadow: 6px;text-align: left;}
+summary{width: 230px;margin: auto;border-radius: 10px 10px;padding: 10px;text-shadow: 6px;}
+section{align-items: center;text-align: center;justify-content: center;width: 300px;margin: auto;border-radius: 10px 10px;padding: 20px;}
+header{align-items: center;text-align: center;justify-content: center;width: 300px;margin: auto;border-radius: 10px 10px;padding: 20px;}
+footer{align-items: center;text-align: center;justify-content: center;width: 300px;margin: auto;border-radius: 10px 10px;padding: 20px;}
+.section:hover{transform: scale(1.04);transition: transform(0.8s);}
+.header:hover{transform: scale(1.08);transition: transform(0.6s);}
+.summary:hover{transform: scale(1.07);transition: transform(0.8s);}
+.image:hover{transform: scale(1.06);transition: transform(0.7s);}
+.nav:hover{transform: scale(1.17);transition: transform(0.6s);}
+.cursos:hover{transform: scale(1.07);transition: transform(0.6s);}
