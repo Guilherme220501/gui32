@@ -3,11 +3,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário | GN</title>
     <style>
-        body{
+         body{
             font-family: Arial, Helvetica, sans-serif;
             background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
         }
@@ -23,14 +22,15 @@
             width: 20%;
         }
         fieldset{
-            border: 3px solid dodgerblue;
+            border: 3px solid dodgerblue;width: 300px;margin: auto;
         }
         legend{
-            border: 1px solid rgb(197, 200, 204);
+            border: 1px solid dodgerblue;
             padding: 10px;
             text-align: center;
             background-color: dodgerblue;
             border-radius: 8px;
+            width: 310px;margin: auto;
         }
         .inputBox{
             position: relative;
@@ -76,22 +76,21 @@
             border-radius: 10px;
         }
         #submit:hover{
-            background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(195, 28, 19));
+            background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
         }
     </style>
 </head>
 <body>
-    <div class="box">
         <form action="formulario.php" method="post">
+            <legend><b>Fórmulário de Clientes</b></legend>
             <fieldset>
-                <legend><b>Fórmulário de Clientes</b></legend>
                 <br>
                 <div class="inputBox">
                     <input type="text" name="nome" id="nome" class="inputUser" required>
                     <label for="nome" class="labelInput">Nome completo</label>
                 </div>
                 <br><br>
-                <div class="inputBox">
+                    <div class="inputBox">
                     <input type="text" name="email" id="email" class="inputUser" required>
                     <label for="email" class="labelInput">Email</label>
                 </div>
@@ -121,6 +120,13 @@
                     <label for="cpf" class="labelInput">Cpf</label>
                 </div>
                 <br><br>
+                <div class="inputBox">
+                <input 
+                    pattern="^\d{1,2}\.\d{3}\.\d{3}-?[0-9X]$
+                    "
+                    type="text" name="rg"
+                     id="rg" class="inputUser" required>
+                    <label for="rg" class="labelInput">Rg</label></div><br><br>
                 <div class="inputBox">
                     <input type="text" name="estado" id="estado" class="inputUser" required>
                     <label for="estado" class="labelInput">Estado</label>
